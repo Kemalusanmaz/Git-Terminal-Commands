@@ -1,0 +1,22 @@
+MongoDB server ba[lantisi kurmak:
+C:\Program Files\MongoDB\Server\7.0\bin> mongod
+C:\Program Files\MongoDB\Server\7.0\bin>mongod --auth
+
+Mongoshell başlatmak 
+C:\Users\T12022061821>mongosh
+
+Var olan db 
+show dbs
+
+db geçisi
+use dbName (use galactusKemal)
+
+user ve password yaratmak
+use admin
+db.createUser({user:"adminName",pwd:"adminPassword",roles:["readWrite",dbAdmin"]})
+db.createUser({user:"root",pwd:"root",roles:[]})
+db.auth("root","root")
+
+
+
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
